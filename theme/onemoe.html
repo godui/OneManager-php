@@ -555,6 +555,13 @@
             new DPlayer({
                 container: document.getElementById('video-a' + i),
                 screenshot: true,
+		hotkey: true,
+                contextmenu: [
+                        {
+                            text: '发送到PotPlayer',
+                            link: 'potplayer://'  +  $url.innerHTML ,
+                        },
+                ],
                 video: {
                     url: videos[i]
                 }
